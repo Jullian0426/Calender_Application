@@ -37,6 +37,10 @@ $(function () {
         $(this).removeClass("present past").addClass("future");
       }
     });
+
+    for (i = 9; i < 18; i++) {
+      $("#hour-" + i).children(".description").val(localStorage.getItem("hour-" + i));
+    };
     
   };
 
